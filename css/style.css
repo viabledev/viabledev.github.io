@@ -183,9 +183,37 @@ section { margin-bottom: 56px; }
   display: block;
 }
 
-.landing h1 { margin-bottom: 10px; }
+.landing h1 { margin-bottom: 4px; }
 
-.landing .subtitle { margin: 0 0 40px; }
+.landing .pronounce { margin: 0 0 4px; }
+
+.landing .subtitle { margin: 0 0 28px; }
+
+.landing-icons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.landing-icons a {
+  color: var(--ink-soft);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-icons a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+.landing-icons svg {
+  width: 18px;
+  height: 18px;
+}
 
 .scroll-cue {
   color: var(--ink-soft);
