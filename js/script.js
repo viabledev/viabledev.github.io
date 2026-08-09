@@ -7,4 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
+
+  const themeToggle = document.getElementById("themeToggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+  }
 });
