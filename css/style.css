@@ -160,6 +160,56 @@ h3 { font-size: 1.15rem; margin: 0 0 6px; }
 
 section { margin-bottom: 56px; }
 
+/* ---------- Full-screen splash ---------- */
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  margin: 0;
+}
+
+.landing .avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  margin-bottom: 24px;
+  object-fit: cover;
+  display: block;
+}
+
+.landing h1 { margin-bottom: 10px; }
+
+.landing .subtitle { margin: 0 0 40px; }
+
+.scroll-cue {
+  color: var(--ink-soft);
+  font-size: 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bob 2s ease-in-out infinite;
+}
+.scroll-cue:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
 /* ---------- Hero (landing page) ---------- */
 .hero {
   padding: 40px 0 8px;
